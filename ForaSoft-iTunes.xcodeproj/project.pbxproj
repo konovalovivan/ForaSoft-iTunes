@@ -9,12 +9,16 @@
 /* Begin PBXBuildFile section */
 		3D9A6E4D25C6F1B000DF889B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A6E4C25C6F1B000DF889B /* AppDelegate.swift */; };
 		3D9A6E4F25C6F1B000DF889B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A6E4E25C6F1B000DF889B /* SceneDelegate.swift */; };
-		3D9A6E5125C6F1B000DF889B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A6E5025C6F1B000DF889B /* ViewController.swift */; };
-		3D9A6E5425C6F1B000DF889B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D9A6E5225C6F1B000DF889B /* Main.storyboard */; };
 		3D9A6E5625C6F1B100DF889B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D9A6E5525C6F1B100DF889B /* Assets.xcassets */; };
 		3D9A6E5925C6F1B100DF889B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D9A6E5725C6F1B100DF889B /* LaunchScreen.storyboard */; };
 		3D9A6E6425C6F1B100DF889B /* ForaSoft_iTunesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A6E6325C6F1B100DF889B /* ForaSoft_iTunesTests.swift */; };
 		3D9A6E6F25C6F1B100DF889B /* ForaSoft_iTunesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A6E6E25C6F1B100DF889B /* ForaSoft_iTunesUITests.swift */; };
+		3D9A6E8A25C74C2C00DF889B /* MainCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A6E8925C74C2C00DF889B /* MainCollectionViewController.swift */; };
+		3D9A6E8B25C74C2C00DF889B /* MainCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A6E8925C74C2C00DF889B /* MainCollectionViewController.swift */; };
+		3D9A6E8C25C74C2C00DF889B /* MainCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A6E8925C74C2C00DF889B /* MainCollectionViewController.swift */; };
+		3D9A6E9425C74C8A00DF889B /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A6E9325C74C8A00DF889B /* NavigationViewController.swift */; };
+		3D9A6E9525C74C8A00DF889B /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A6E9325C74C8A00DF889B /* NavigationViewController.swift */; };
+		3D9A6E9625C74C8A00DF889B /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A6E9325C74C8A00DF889B /* NavigationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +42,6 @@
 		3D9A6E4925C6F1B000DF889B /* ForaSoft-iTunes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ForaSoft-iTunes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D9A6E4C25C6F1B000DF889B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D9A6E4E25C6F1B000DF889B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3D9A6E5025C6F1B000DF889B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3D9A6E5325C6F1B000DF889B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3D9A6E5525C6F1B100DF889B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D9A6E5825C6F1B100DF889B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D9A6E5A25C6F1B100DF889B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +51,8 @@
 		3D9A6E6A25C6F1B100DF889B /* ForaSoft-iTunesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ForaSoft-iTunesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D9A6E6E25C6F1B100DF889B /* ForaSoft_iTunesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForaSoft_iTunesUITests.swift; sourceTree = "<group>"; };
 		3D9A6E7025C6F1B100DF889B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D9A6E8925C74C2C00DF889B /* MainCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewController.swift; sourceTree = "<group>"; };
+		3D9A6E9325C74C8A00DF889B /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +103,10 @@
 		3D9A6E4B25C6F1B000DF889B /* ForaSoft-iTunes */ = {
 			isa = PBXGroup;
 			children = (
+				3D9A6EF025C7627800DF889B /* Helpers */,
+				3D9A6E8825C74BE800DF889B /* Controllers */,
 				3D9A6E4C25C6F1B000DF889B /* AppDelegate.swift */,
 				3D9A6E4E25C6F1B000DF889B /* SceneDelegate.swift */,
-				3D9A6E5025C6F1B000DF889B /* ViewController.swift */,
-				3D9A6E5225C6F1B000DF889B /* Main.storyboard */,
 				3D9A6E5525C6F1B100DF889B /* Assets.xcassets */,
 				3D9A6E5725C6F1B100DF889B /* LaunchScreen.storyboard */,
 				3D9A6E5A25C6F1B100DF889B /* Info.plist */,
@@ -126,6 +130,38 @@
 				3D9A6E7025C6F1B100DF889B /* Info.plist */,
 			);
 			path = "ForaSoft-iTunesUITests";
+			sourceTree = "<group>";
+		};
+		3D9A6E8825C74BE800DF889B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3D9A6E9B25C74C9A00DF889B /* MainCollectionViewController */,
+				3D9A6E9A25C74C9000DF889B /* NavigationViewController */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3D9A6E9A25C74C9000DF889B /* NavigationViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3D9A6E9325C74C8A00DF889B /* NavigationViewController.swift */,
+			);
+			path = NavigationViewController;
+			sourceTree = "<group>";
+		};
+		3D9A6E9B25C74C9A00DF889B /* MainCollectionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3D9A6E8925C74C2C00DF889B /* MainCollectionViewController.swift */,
+			);
+			path = MainCollectionViewController;
+			sourceTree = "<group>";
+		};
+		3D9A6EF025C7627800DF889B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +269,6 @@
 			files = (
 				3D9A6E5925C6F1B100DF889B /* LaunchScreen.storyboard in Resources */,
 				3D9A6E5625C6F1B100DF889B /* Assets.xcassets in Resources */,
-				3D9A6E5425C6F1B000DF889B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,8 +293,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D9A6E5125C6F1B000DF889B /* ViewController.swift in Sources */,
+				3D9A6E8A25C74C2C00DF889B /* MainCollectionViewController.swift in Sources */,
 				3D9A6E4D25C6F1B000DF889B /* AppDelegate.swift in Sources */,
+				3D9A6E9425C74C8A00DF889B /* NavigationViewController.swift in Sources */,
 				3D9A6E4F25C6F1B000DF889B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,7 +304,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D9A6E9525C74C8A00DF889B /* NavigationViewController.swift in Sources */,
 				3D9A6E6425C6F1B100DF889B /* ForaSoft_iTunesTests.swift in Sources */,
+				3D9A6E8B25C74C2C00DF889B /* MainCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +314,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D9A6E9625C74C8A00DF889B /* NavigationViewController.swift in Sources */,
 				3D9A6E6F25C6F1B100DF889B /* ForaSoft_iTunesUITests.swift in Sources */,
+				3D9A6E8C25C74C2C00DF889B /* MainCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +336,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		3D9A6E5225C6F1B000DF889B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3D9A6E5325C6F1B000DF889B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3D9A6E5725C6F1B100DF889B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -447,7 +479,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Sergey-Fedotov.ForaSoft-iTunes";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -467,7 +499,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Sergey-Fedotov.ForaSoft-iTunes";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
