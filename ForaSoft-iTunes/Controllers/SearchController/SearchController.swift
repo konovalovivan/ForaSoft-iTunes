@@ -83,14 +83,14 @@ extension SearchController: UICollectionViewDelegate, UICollectionViewDataSource
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let sc = MainCollectionViewController.searchController
-        let sbtext = sc?.searchBar.text
+        let sbtext = sc.searchBar.text
         guard let cell = collectionView.cellForItem(at: indexPath) as? CellWithLastReq, let text = cell.label.text else { return }
         switch sbtext != text {
         case true:
             mainVC?.searchBar(searchBar, textDidChange: text)
-            sc?.isActive = false
+            sc.isActive = false
         default:
-            sc?.isActive = false
+            sc.isActive = false
         }
     }
 }

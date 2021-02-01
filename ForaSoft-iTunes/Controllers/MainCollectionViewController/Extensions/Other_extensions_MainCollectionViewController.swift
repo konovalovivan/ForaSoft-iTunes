@@ -2,18 +2,18 @@ import Foundation
 import UIKit
 
 extension MainCollectionViewController {
-    private(set) static var searchController: SearchController! = .init(searchResultsController: nil)
-    private(set) static var numberOfItemsPerRow: CGFloat = 2
-    private(set) static var spacing: CGFloat = 16
+    static let searchController = SearchController(searchResultsController: nil)
+    static let numberOfItemsPerRow: CGFloat = 2.0
+    static let spacing: CGFloat = 16.0
     
     internal func flowLayoutConfig() {
         guard let layout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout else { fatalError() }
-        let N = Self.spacing
+        let s = Self.spacing
         layout.scrollDirection = .vertical
         layout.sectionHeadersPinToVisibleBounds = false
-        layout.minimumLineSpacing = N
-        layout.minimumInteritemSpacing = N
-        layout.sectionInset = .init(top:N,left:N,bottom:N,right:N)
+        layout.minimumLineSpacing = s
+        layout.minimumInteritemSpacing = s
+        layout.sectionInset = .init(top:s,left:s,bottom:s,right:s)
     }
     
     internal func navigationControllerConfig() {

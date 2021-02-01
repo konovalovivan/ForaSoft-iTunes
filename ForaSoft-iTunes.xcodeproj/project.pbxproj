@@ -70,9 +70,9 @@
 		3D9A6FAC25C796B900DF889B /* MainCollectionViewControllerSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A6FAB25C796B900DF889B /* MainCollectionViewControllerSearchController.swift */; };
 		3D9A6FAD25C796B900DF889B /* MainCollectionViewControllerSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A6FAB25C796B900DF889B /* MainCollectionViewControllerSearchController.swift */; };
 		3D9A6FAE25C796B900DF889B /* MainCollectionViewControllerSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A6FAB25C796B900DF889B /* MainCollectionViewControllerSearchController.swift */; };
-		3D9A6FB925C7975700DF889B /* extensionMainCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A6FB825C7975700DF889B /* extensionMainCollectionViewController.swift */; };
-		3D9A6FBA25C7975700DF889B /* extensionMainCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A6FB825C7975700DF889B /* extensionMainCollectionViewController.swift */; };
-		3D9A6FBB25C7975700DF889B /* extensionMainCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A6FB825C7975700DF889B /* extensionMainCollectionViewController.swift */; };
+		3D9A6FB925C7975700DF889B /* Other_extensions_MainCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A6FB825C7975700DF889B /* Other_extensions_MainCollectionViewController.swift */; };
+		3D9A6FBA25C7975700DF889B /* Other_extensions_MainCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A6FB825C7975700DF889B /* Other_extensions_MainCollectionViewController.swift */; };
+		3D9A6FBB25C7975700DF889B /* Other_extensions_MainCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A6FB825C7975700DF889B /* Other_extensions_MainCollectionViewController.swift */; };
 		3D9A6FC025C7989800DF889B /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A6FBF25C7989800DF889B /* UIViewControllerExtensions.swift */; };
 		3D9A6FC125C7989800DF889B /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A6FBF25C7989800DF889B /* UIViewControllerExtensions.swift */; };
 		3D9A6FC225C7989800DF889B /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A6FBF25C7989800DF889B /* UIViewControllerExtensions.swift */; };
@@ -91,6 +91,29 @@
 		3D9A6FF425C79AF700DF889B /* UIDeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A6FF325C79AF700DF889B /* UIDeviceExtension.swift */; };
 		3D9A6FF525C79AF700DF889B /* UIDeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A6FF325C79AF700DF889B /* UIDeviceExtension.swift */; };
 		3D9A6FF625C79AF700DF889B /* UIDeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A6FF325C79AF700DF889B /* UIDeviceExtension.swift */; };
+		3D9A700E25C818D900DF889B /* MillisecondsToMinutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A700D25C818D900DF889B /* MillisecondsToMinutes.swift */; };
+		3D9A701725C8191300DF889B /* StringFromTimeInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A701625C8191300DF889B /* StringFromTimeInterval.swift */; };
+		3D9A702425C81F0C00DF889B /* AlbumPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A702225C81F0C00DF889B /* AlbumPageVC.swift */; };
+		3D9A702525C81F0C00DF889B /* AlbumPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A702225C81F0C00DF889B /* AlbumPageVC.swift */; };
+		3D9A702625C81F0C00DF889B /* AlbumPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A702225C81F0C00DF889B /* AlbumPageVC.swift */; };
+		3D9A702725C81F0C00DF889B /* AlbumPageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D9A702325C81F0C00DF889B /* AlbumPageVC.xib */; };
+		3D9A702825C81F0C00DF889B /* AlbumPageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D9A702325C81F0C00DF889B /* AlbumPageVC.xib */; };
+		3D9A702925C81F0C00DF889B /* AlbumPageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D9A702325C81F0C00DF889B /* AlbumPageVC.xib */; };
+		3D9A703125C81FA900DF889B /* AppleMusicBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A703025C81FA900DF889B /* AppleMusicBarButton.swift */; };
+		3D9A703225C81FA900DF889B /* AppleMusicBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A703025C81FA900DF889B /* AppleMusicBarButton.swift */; };
+		3D9A703325C81FA900DF889B /* AppleMusicBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A703025C81FA900DF889B /* AppleMusicBarButton.swift */; };
+		3D9A703925C81FF800DF889B /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A703825C81FF800DF889B /* AudioPlayer.swift */; };
+		3D9A703A25C81FF800DF889B /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A703825C81FF800DF889B /* AudioPlayer.swift */; };
+		3D9A703B25C81FF800DF889B /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A703825C81FF800DF889B /* AudioPlayer.swift */; };
+		3D9A704725C8209600DF889B /* TableView_AlbumPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A704625C8209600DF889B /* TableView_AlbumPageVC.swift */; };
+		3D9A704825C8209600DF889B /* TableView_AlbumPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A704625C8209600DF889B /* TableView_AlbumPageVC.swift */; };
+		3D9A704925C8209600DF889B /* TableView_AlbumPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A704625C8209600DF889B /* TableView_AlbumPageVC.swift */; };
+		3D9A706025C8211000DF889B /* AlbumPageVCCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A705E25C8211000DF889B /* AlbumPageVCCell.swift */; };
+		3D9A706125C8211000DF889B /* AlbumPageVCCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A705E25C8211000DF889B /* AlbumPageVCCell.swift */; };
+		3D9A706225C8211000DF889B /* AlbumPageVCCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A705E25C8211000DF889B /* AlbumPageVCCell.swift */; };
+		3D9A706325C8211000DF889B /* AlbumPageVCCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D9A705F25C8211000DF889B /* AlbumPageVCCell.xib */; };
+		3D9A706425C8211000DF889B /* AlbumPageVCCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D9A705F25C8211000DF889B /* AlbumPageVCCell.xib */; };
+		3D9A706525C8211000DF889B /* AlbumPageVCCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D9A705F25C8211000DF889B /* AlbumPageVCCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -142,13 +165,22 @@
 		3D9A6F9525C7954300DF889B /* CellWithLastReq.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellWithLastReq.swift; sourceTree = "<group>"; };
 		3D9A6FA025C7958600DF889B /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		3D9A6FAB25C796B900DF889B /* MainCollectionViewControllerSearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewControllerSearchController.swift; sourceTree = "<group>"; };
-		3D9A6FB825C7975700DF889B /* extensionMainCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensionMainCollectionViewController.swift; sourceTree = "<group>"; };
+		3D9A6FB825C7975700DF889B /* Other_extensions_MainCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Other_extensions_MainCollectionViewController.swift; sourceTree = "<group>"; };
 		3D9A6FBF25C7989800DF889B /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
 		3D9A6FC625C798D500DF889B /* SceneDelegateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegateExtension.swift; sourceTree = "<group>"; };
 		3D9A6FCF25C799B000DF889B /* NetworkIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkIndicatorView.swift; sourceTree = "<group>"; };
 		3D9A6FDA25C799F700DF889B /* Indicators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Indicators.swift; sourceTree = "<group>"; };
 		3D9A6FE825C79A6E00DF889B /* CGRectCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGRectCenter.swift; sourceTree = "<group>"; };
 		3D9A6FF325C79AF700DF889B /* UIDeviceExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDeviceExtension.swift; sourceTree = "<group>"; };
+		3D9A700D25C818D900DF889B /* MillisecondsToMinutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MillisecondsToMinutes.swift; sourceTree = "<group>"; };
+		3D9A701625C8191300DF889B /* StringFromTimeInterval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringFromTimeInterval.swift; sourceTree = "<group>"; };
+		3D9A702225C81F0C00DF889B /* AlbumPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumPageVC.swift; sourceTree = "<group>"; };
+		3D9A702325C81F0C00DF889B /* AlbumPageVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlbumPageVC.xib; sourceTree = "<group>"; };
+		3D9A703025C81FA900DF889B /* AppleMusicBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleMusicBarButton.swift; sourceTree = "<group>"; };
+		3D9A703825C81FF800DF889B /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
+		3D9A704625C8209600DF889B /* TableView_AlbumPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView_AlbumPageVC.swift; sourceTree = "<group>"; };
+		3D9A705E25C8211000DF889B /* AlbumPageVCCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumPageVCCell.swift; sourceTree = "<group>"; };
+		3D9A705F25C8211000DF889B /* AlbumPageVCCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlbumPageVCCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,7 +232,6 @@
 			isa = PBXGroup;
 			children = (
 				3D9A6FCD25C7999A00DF889B /* Views */,
-				3D9A6F8125C7928C00DF889B /* Dispatcher */,
 				3D9A6F6425C791E300DF889B /* API */,
 				3D9A6F5C25C791C300DF889B /* Storage */,
 				3D9A6F2625C789EE00DF889B /* Handlers */,
@@ -236,6 +267,7 @@
 		3D9A6E8825C74BE800DF889B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				3D9A702125C81EE900DF889B /* AlbumPageVC */,
 				3D9A6F8925C7949D00DF889B /* SearchController */,
 				3D9A6E9B25C74C9A00DF889B /* MainCollectionViewController */,
 				3D9A6E9A25C74C9000DF889B /* NavigationViewController */,
@@ -254,10 +286,9 @@
 		3D9A6E9B25C74C9A00DF889B /* MainCollectionViewController */ = {
 			isa = PBXGroup;
 			children = (
-				3D9A6FAA25C796A300DF889B /* SearchControllerConfig */,
 				3D9A6F1725C7892100DF889B /* AlbumCell */,
+				3D9A706C25C8227000DF889B /* Extensions */,
 				3D9A6E8925C74C2C00DF889B /* MainCollectionViewController.swift */,
-				3D9A6FB825C7975700DF889B /* extensionMainCollectionViewController.swift */,
 			);
 			path = MainCollectionViewController;
 			sourceTree = "<group>";
@@ -265,8 +296,9 @@
 		3D9A6EF025C7627800DF889B /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				3D9A6F9F25C7955A00DF889B /* Other Extensions */,
+				3D9A6F8225C7929400DF889B /* Dispatcher.swift */,
 				3D9A6F5225C78B4200DF889B /* IdNib.swift */,
+				3D9A6F9F25C7955A00DF889B /* Other Extensions */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -283,6 +315,7 @@
 		3D9A6F2625C789EE00DF889B /* Handlers */ = {
 			isa = PBXGroup;
 			children = (
+				3D9A703725C81FF100DF889B /* AudioPlayer */,
 				3D9A6F2725C789F500DF889B /* JSON */,
 			);
 			path = Handlers;
@@ -334,14 +367,6 @@
 			path = URLS;
 			sourceTree = "<group>";
 		};
-		3D9A6F8125C7928C00DF889B /* Dispatcher */ = {
-			isa = PBXGroup;
-			children = (
-				3D9A6F8225C7929400DF889B /* Dispatcher.swift */,
-			);
-			path = Dispatcher;
-			sourceTree = "<group>";
-		};
 		3D9A6F8925C7949D00DF889B /* SearchController */ = {
 			isa = PBXGroup;
 			children = (
@@ -363,7 +388,9 @@
 			isa = PBXGroup;
 			children = (
 				3D9A6FE725C79A5900DF889B /* CGRect */,
+				3D9A700625C818CC00DF889B /* Int */,
 				3D9A6FE625C79A4800DF889B /* SceneDelegate */,
+				3D9A701525C8190100DF889B /* TimeInterval */,
 				3D9A6FF225C79AE500DF889B /* UIDevice */,
 				3D9A6FE525C79A3A00DF889B /* UIView */,
 				3D9A6FE425C79A2E00DF889B /* UIViewController */,
@@ -383,6 +410,7 @@
 			isa = PBXGroup;
 			children = (
 				3D9A6FD925C799D700DF889B /* Indicators */,
+				3D9A703025C81FA900DF889B /* AppleMusicBarButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -442,6 +470,67 @@
 				3D9A6FF325C79AF700DF889B /* UIDeviceExtension.swift */,
 			);
 			path = UIDevice;
+			sourceTree = "<group>";
+		};
+		3D9A700625C818CC00DF889B /* Int */ = {
+			isa = PBXGroup;
+			children = (
+				3D9A700D25C818D900DF889B /* MillisecondsToMinutes.swift */,
+			);
+			path = Int;
+			sourceTree = "<group>";
+		};
+		3D9A701525C8190100DF889B /* TimeInterval */ = {
+			isa = PBXGroup;
+			children = (
+				3D9A701625C8191300DF889B /* StringFromTimeInterval.swift */,
+			);
+			path = TimeInterval;
+			sourceTree = "<group>";
+		};
+		3D9A702125C81EE900DF889B /* AlbumPageVC */ = {
+			isa = PBXGroup;
+			children = (
+				3D9A704525C8206E00DF889B /* TableView_AlbumPageVC */,
+				3D9A702225C81F0C00DF889B /* AlbumPageVC.swift */,
+				3D9A702325C81F0C00DF889B /* AlbumPageVC.xib */,
+			);
+			path = AlbumPageVC;
+			sourceTree = "<group>";
+		};
+		3D9A703725C81FF100DF889B /* AudioPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				3D9A703825C81FF800DF889B /* AudioPlayer.swift */,
+			);
+			path = AudioPlayer;
+			sourceTree = "<group>";
+		};
+		3D9A704525C8206E00DF889B /* TableView_AlbumPageVC */ = {
+			isa = PBXGroup;
+			children = (
+				3D9A705025C820B300DF889B /* Cell */,
+				3D9A704625C8209600DF889B /* TableView_AlbumPageVC.swift */,
+			);
+			path = TableView_AlbumPageVC;
+			sourceTree = "<group>";
+		};
+		3D9A705025C820B300DF889B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				3D9A705E25C8211000DF889B /* AlbumPageVCCell.swift */,
+				3D9A705F25C8211000DF889B /* AlbumPageVCCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		3D9A706C25C8227000DF889B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3D9A6FAA25C796A300DF889B /* SearchControllerConfig */,
+				3D9A6FB825C7975700DF889B /* Other_extensions_MainCollectionViewController.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -550,6 +639,8 @@
 				3D9A6E5925C6F1B100DF889B /* LaunchScreen.storyboard in Resources */,
 				3D9A6F1D25C7896B00DF889B /* AlbumCell.xib in Resources */,
 				3D9A6E5625C6F1B100DF889B /* Assets.xcassets in Resources */,
+				3D9A706325C8211000DF889B /* AlbumPageVCCell.xib in Resources */,
+				3D9A702725C81F0C00DF889B /* AlbumPageVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -558,6 +649,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D9A6F1E25C7896B00DF889B /* AlbumCell.xib in Resources */,
+				3D9A706425C8211000DF889B /* AlbumPageVCCell.xib in Resources */,
+				3D9A702825C81F0C00DF889B /* AlbumPageVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -566,6 +659,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D9A6F1F25C7896B00DF889B /* AlbumCell.xib in Resources */,
+				3D9A706525C8211000DF889B /* AlbumPageVCCell.xib in Resources */,
+				3D9A702925C81F0C00DF889B /* AlbumPageVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -576,18 +671,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D9A6FB925C7975700DF889B /* extensionMainCollectionViewController.swift in Sources */,
+				3D9A6FB925C7975700DF889B /* Other_extensions_MainCollectionViewController.swift in Sources */,
 				3D9A6F4525C78AC600DF889B /* Result.swift in Sources */,
 				3D9A6F6625C791FF00DF889B /* GETPOST.swift in Sources */,
 				3D9A6F8325C7929400DF889B /* Dispatcher.swift in Sources */,
 				3D9A6F4C25C78AD700DF889B /* Track.swift in Sources */,
 				3D9A6F2925C78A1900DF889B /* Handler.swift in Sources */,
 				3D9A6FAC25C796B900DF889B /* MainCollectionViewControllerSearchController.swift in Sources */,
+				3D9A701725C8191300DF889B /* StringFromTimeInterval.swift in Sources */,
+				3D9A704725C8209600DF889B /* TableView_AlbumPageVC.swift in Sources */,
 				3D9A6F3E25C78AB100DF889B /* Request.swift in Sources */,
 				3D9A6F5325C78B4200DF889B /* IdNib.swift in Sources */,
 				3D9A6F7025C7921E00DF889B /* API.swift in Sources */,
+				3D9A703925C81FF800DF889B /* AudioPlayer.swift in Sources */,
 				3D9A6F5E25C791D000DF889B /* Storage.swift in Sources */,
 				3D9A6E8A25C74C2C00DF889B /* MainCollectionViewController.swift in Sources */,
+				3D9A702425C81F0C00DF889B /* AlbumPageVC.swift in Sources */,
 				3D9A6FF425C79AF700DF889B /* UIDeviceExtension.swift in Sources */,
 				3D9A6FC025C7989800DF889B /* UIViewControllerExtensions.swift in Sources */,
 				3D9A6FA125C7958600DF889B /* UIViewExtensions.swift in Sources */,
@@ -597,10 +696,13 @@
 				3D9A6FC725C798D500DF889B /* SceneDelegateExtension.swift in Sources */,
 				3D9A6FDB25C799F700DF889B /* Indicators.swift in Sources */,
 				3D9A6F1A25C7896B00DF889B /* AlbumCell.swift in Sources */,
+				3D9A700E25C818D900DF889B /* MillisecondsToMinutes.swift in Sources */,
 				3D9A6F9625C7954300DF889B /* CellWithLastReq.swift in Sources */,
 				3D9A6E9425C74C8A00DF889B /* NavigationViewController.swift in Sources */,
 				3D9A6FE925C79A6E00DF889B /* CGRectCenter.swift in Sources */,
+				3D9A703125C81FA900DF889B /* AppleMusicBarButton.swift in Sources */,
 				3D9A6F3425C78A9C00DF889B /* Album.swift in Sources */,
+				3D9A706025C8211000DF889B /* AlbumPageVCCell.swift in Sources */,
 				3D9A6E4F25C6F1B000DF889B /* SceneDelegate.swift in Sources */,
 				3D9A6FD025C799B000DF889B /* NetworkIndicatorView.swift in Sources */,
 			);
@@ -620,7 +722,8 @@
 				3D9A6F9725C7954300DF889B /* CellWithLastReq.swift in Sources */,
 				3D9A6E8B25C74C2C00DF889B /* MainCollectionViewController.swift in Sources */,
 				3D9A6FEA25C79A6E00DF889B /* CGRectCenter.swift in Sources */,
-				3D9A6FBA25C7975700DF889B /* extensionMainCollectionViewController.swift in Sources */,
+				3D9A702525C81F0C00DF889B /* AlbumPageVC.swift in Sources */,
+				3D9A6FBA25C7975700DF889B /* Other_extensions_MainCollectionViewController.swift in Sources */,
 				3D9A6FD125C799B000DF889B /* NetworkIndicatorView.swift in Sources */,
 				3D9A6F2A25C78A1900DF889B /* Handler.swift in Sources */,
 				3D9A6FDC25C799F700DF889B /* Indicators.swift in Sources */,
@@ -632,10 +735,14 @@
 				3D9A6F8C25C794C100DF889B /* SearchController.swift in Sources */,
 				3D9A6F1B25C7896B00DF889B /* AlbumCell.swift in Sources */,
 				3D9A6F4625C78AC600DF889B /* Result.swift in Sources */,
+				3D9A706125C8211000DF889B /* AlbumPageVCCell.swift in Sources */,
+				3D9A703A25C81FF800DF889B /* AudioPlayer.swift in Sources */,
 				3D9A6F3525C78A9C00DF889B /* Album.swift in Sources */,
+				3D9A703225C81FA900DF889B /* AppleMusicBarButton.swift in Sources */,
 				3D9A6FA225C7958600DF889B /* UIViewExtensions.swift in Sources */,
 				3D9A6FAD25C796B900DF889B /* MainCollectionViewControllerSearchController.swift in Sources */,
 				3D9A6F8425C7929400DF889B /* Dispatcher.swift in Sources */,
+				3D9A704825C8209600DF889B /* TableView_AlbumPageVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -653,7 +760,8 @@
 				3D9A6F9825C7954300DF889B /* CellWithLastReq.swift in Sources */,
 				3D9A6E8C25C74C2C00DF889B /* MainCollectionViewController.swift in Sources */,
 				3D9A6FEB25C79A6E00DF889B /* CGRectCenter.swift in Sources */,
-				3D9A6FBB25C7975700DF889B /* extensionMainCollectionViewController.swift in Sources */,
+				3D9A702625C81F0C00DF889B /* AlbumPageVC.swift in Sources */,
+				3D9A6FBB25C7975700DF889B /* Other_extensions_MainCollectionViewController.swift in Sources */,
 				3D9A6FD225C799B000DF889B /* NetworkIndicatorView.swift in Sources */,
 				3D9A6F2B25C78A1900DF889B /* Handler.swift in Sources */,
 				3D9A6FDD25C799F700DF889B /* Indicators.swift in Sources */,
@@ -665,10 +773,14 @@
 				3D9A6F8D25C794C100DF889B /* SearchController.swift in Sources */,
 				3D9A6F1C25C7896B00DF889B /* AlbumCell.swift in Sources */,
 				3D9A6F4725C78AC600DF889B /* Result.swift in Sources */,
+				3D9A706225C8211000DF889B /* AlbumPageVCCell.swift in Sources */,
+				3D9A703B25C81FF800DF889B /* AudioPlayer.swift in Sources */,
 				3D9A6F3625C78A9C00DF889B /* Album.swift in Sources */,
+				3D9A703325C81FA900DF889B /* AppleMusicBarButton.swift in Sources */,
 				3D9A6FA325C7958600DF889B /* UIViewExtensions.swift in Sources */,
 				3D9A6FAE25C796B900DF889B /* MainCollectionViewControllerSearchController.swift in Sources */,
 				3D9A6F8525C7929400DF889B /* Dispatcher.swift in Sources */,
+				3D9A704925C8209600DF889B /* TableView_AlbumPageVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

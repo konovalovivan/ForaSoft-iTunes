@@ -8,13 +8,7 @@ final class Storage {
     
     enum searchBar {
         static var text: String = .init()
-        static var array: [String] = .init() {
-            didSet {
-                if let last: String = array.last {
-                    API.post(postbody: ["Storage.searchBar.array.last":last])
-                }
-            }
-        }
+        static var array: [String] = .init()
     }
     
     public static func updater<T>(_ value: T) {
