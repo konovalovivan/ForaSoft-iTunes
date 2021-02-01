@@ -10,9 +10,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="AlbumCell" reuseIdentifier="AlbumCell" id="Z4j-V5-9rk" customClass="AlbumCell" customModule="ForaSoft_iTunes" customModuleProvider="target">
+        <collectionViewCell clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AlbumCell" id="Z4j-V5-9rk" customClass="AlbumCell" customModule="ForaSoft_iTunes" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
-            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <collectionViewCellContentView key="contentView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Jbo-Fy-dk6">
                 <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -23,7 +23,7 @@
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zuU-N7-vI3">
                                 <rect key="frame" x="0.0" y="0.0" width="200" height="97"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="kzJ-Yz-5Jn" userLabel="albumCoverImageView">
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFill" image="albumcover_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="kzJ-Yz-5Jn" userLabel="albumCoverImageView">
                                         <rect key="frame" x="51.5" y="0.0" width="97" height="97"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="kzJ-Yz-5Jn" secondAttribute="height" multiplier="1:1" id="iRs-eL-HLv"/>
@@ -93,14 +93,15 @@
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <size key="customSize" width="200" height="200"/>
             <connections>
-                <outlet property="albumCoverImageView" destination="kzJ-Yz-5Jn" id="c1g-2N-gCZ"/>
-                <outlet property="artistNameLabel" destination="Yjj-C9-q9I" id="rNl-iv-34k"/>
-                <outlet property="collectionNameLabel" destination="oIs-ys-yPI" id="ma2-fg-TM0"/>
+                <outlet property="albumCoverImageView" destination="kzJ-Yz-5Jn" id="ggH-Hg-SEn"/>
+                <outlet property="artistNameLabel" destination="Yjj-C9-q9I" id="1AI-OO-xit"/>
+                <outlet property="collectionNameLabel" destination="oIs-ys-yPI" id="ebm-DC-1ZJ"/>
             </connections>
             <point key="canvasLocation" x="-438.75" y="-177.5"/>
         </collectionViewCell>
     </objects>
     <resources>
+        <image name="albumcover_placeholder" width="800" height="800"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

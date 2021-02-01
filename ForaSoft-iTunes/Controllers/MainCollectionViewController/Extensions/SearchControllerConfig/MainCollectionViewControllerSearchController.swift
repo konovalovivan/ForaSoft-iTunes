@@ -1,5 +1,6 @@
 import UIKit
 
+// MARK: -- MainViewController's Search Controller Extensions
 extension MainCollectionViewController: UISearchBarDelegate, UISearchControllerDelegate {
     
     @objc fileprivate dynamic func textDidChange(_ searchBar: UISearchBar) {
@@ -15,9 +16,9 @@ extension MainCollectionViewController: UISearchBarDelegate, UISearchControllerD
                 if !sb.array.contains(text), !text.hasPrefix(" ") {
                     sb.array.append(text)
                 }
-            default: break
-            // Indicators.loading.isHidden = true
-            // Indicators.failLabel.isHidden = false
+            default:
+                Indicators.loading.isHidden = true
+                Indicators.failLabel.isHidden = false
             }
         })
     }
@@ -27,13 +28,13 @@ extension MainCollectionViewController: UISearchBarDelegate, UISearchControllerD
         NSObject.cancelPreviousPerformRequests(withTarget: self, selector: selector, object: searchBar)
         
         collectionView.isHidden = true
-        // Indicators.loading.isHidden = true
-        // Indicators.failLabel.isHidden = true
+        Indicators.loading.isHidden = true
+        Indicators.failLabel.isHidden = true
         
         Storage.searchBar.text = searchText
         
         guard !searchText.isEmpty else { return }
-        // Indicators.loading.isHidden = searchText.isEmpty
+        Indicators.loading.isHidden = searchText.isEmpty
         self.perform(selector, with: searchBar, afterDelay: 1.0)
     }
     

@@ -3,24 +3,29 @@ import UIKit
 class MainCollectionViewController: UICollectionViewController {
     
     fileprivate func collectionViewConfig() {
-        collectionView!.register(AlbumCell.self, forCellWithReuseIdentifier: AlbumCell.reuseId)
-        collectionView.backgroundColor = .systemBackground
-        collectionView.keyboardDismissMode = .onDrag
-        collectionView.alwaysBounceVertical = true
-        collectionView.isPrefetchingEnabled = true
-        collectionView.setNeedsLayout()
-        collectionView.layoutIfNeeded()
+        // clearsSelectionOnViewWillAppear = false
+        collectionView!.register(AlbumCell.nib, forCellWithReuseIdentifier: AlbumCell.reuseId)
+        collectionView!.backgroundColor = .systemBackground
+        collectionView!.keyboardDismissMode = .onDrag
+        collectionView!.alwaysBounceVertical = true
+        collectionView!.isPrefetchingEnabled = true
+        collectionView!.setNeedsLayout()
+        collectionView!.layoutIfNeeded()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Main Screen"
+        title = "iTunes Search"
         view.backgroundColor = .systemBackground
         
         collectionViewConfig()
         Self.searchController.searchBar.delegate = self
         Self.searchController.delegate = self
         Self.searchController.mainVC = self
+        
+        view.addSubview(Indicators.loading)
+        view.addSubview(Indicators.failLabel)
+        networkIndicator(true, { self.view.addSubview($0) })
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -28,6 +33,12 @@ class MainCollectionViewController: UICollectionViewController {
         flowLayoutConfig()
         navigationControllerConfig()
         Self.searchController.searchBar.text = Storage.searchBar.text
+    }
+    
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        Indicators.loading.isHidden = true
+        Indicators.failLabel.isHidden = true
     }
     
     override func viewDidDisappear(_ animated: Bool) {
@@ -38,10 +49,18 @@ class MainCollectionViewController: UICollectionViewController {
         networkIndicator(!animated, nil)
     }
     
+    init() {
+        // Fix: initialized with a non-nil layout parameter
+        super.init(collectionViewLayout: UICollectionViewFlowLayout())
+    }
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     // MARK: -- UICollectionViewDataSource
     
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 0
+        return 1
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -59,43 +78,21 @@ class MainCollectionViewController: UICollectionViewController {
         return cell
     }
     
-    init() {
-        // Fix: initialized with a non-nil layout parameter
-        super.init(collectionViewLayout: UICollectionViewFlowLayout())
-    }
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+    internal func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let spacing: CGFloat = Self.spacing
+        let items: CGFloat = Self.numberOfItemsPerRow
+        let totalSpacing = (2 * spacing) + ((items - 1) * spacing)
+        let width = (collectionView.bounds.width - totalSpacing) / items
+        return CGSize(width: width, height: width * 1.33)
     }
     
     // MARK:  -- UICollectionViewDelegate
     
-    /*
-     // Uncomment this method to specify if the specified item should be highlighted during tracking
-     override func collectionView(_ collectionView: UICollectionView, shouldHighlightItemAt indexPath: IndexPath) -> Bool {
-     return true
-     }
-     */
-    
-    /*
-     // Uncomment this method to specify if the specified item should be selected
-     override func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
-     return true
-     }
-     */
-    
-    /*
-     // Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
-     override func collectionView(_ collectionView: UICollectionView, shouldShowMenuForItemAt indexPath: IndexPath) -> Bool {
-     return false
-     }
-     
-     override func collectionView(_ collectionView: UICollectionView, canPerformAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) -> Bool {
-     return false
-     }
-     
-     override func collectionView(_ collectionView: UICollectionView, performAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) {
-     
-     }
-     */
-    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        guard let album = AlbumPageVC.nib.instantiate(withOwner: nil).first as? AlbumPageVC, let result = Storage.request?.results[indexPath.row]
+        else { fatalError("AlbumPageVC not found") }
+        album.configuration(result)
+        // present(album, animated: true, completion: nil)
+        navigationController?.pushViewController(album, animated: true)
+    }
 }
