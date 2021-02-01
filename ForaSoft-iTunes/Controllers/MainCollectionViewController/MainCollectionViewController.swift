@@ -67,25 +67,28 @@ class MainCollectionViewController: UICollectionViewController {
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 0
+        return Storage.request?.resultCount ?? 0
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: AlbumCell.reuseId, for: indexPath)
-        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: AlbumCell.reuseId, for: indexPath) as! AlbumCell
+        let req = Storage.request
+        if let rc = req?.resultCount, rc > 0 && indexPath.row < rc {
+            if let result = req?.results[indexPath.row] {
+                cell.config(result)
+            }
+        }
         return cell
     }
     
-    override init(collectionViewLayout layout: UICollectionViewLayout) {
-        super.init(collectionViewLayout: layout)
-    }
-    convenience init() {
-        self.init(collectionViewLayout: UICollectionViewLayout())
+    init() {
+        // Fix: initialized with a non-nil layout parameter
+        super.init(collectionViewLayout: UICollectionViewFlowLayout())
     }
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
+
     // MARK:  -- UICollectionViewDelegate
     
     /*
