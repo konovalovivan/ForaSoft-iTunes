@@ -19,6 +19,30 @@
 		3D9A6E9425C74C8A00DF889B /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A6E9325C74C8A00DF889B /* NavigationViewController.swift */; };
 		3D9A6E9525C74C8A00DF889B /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A6E9325C74C8A00DF889B /* NavigationViewController.swift */; };
 		3D9A6E9625C74C8A00DF889B /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A6E9325C74C8A00DF889B /* NavigationViewController.swift */; };
+		3D9A6F1A25C7896B00DF889B /* AlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A6F1825C7896B00DF889B /* AlbumCell.swift */; };
+		3D9A6F1B25C7896B00DF889B /* AlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A6F1825C7896B00DF889B /* AlbumCell.swift */; };
+		3D9A6F1C25C7896B00DF889B /* AlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A6F1825C7896B00DF889B /* AlbumCell.swift */; };
+		3D9A6F1D25C7896B00DF889B /* AlbumCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D9A6F1925C7896B00DF889B /* AlbumCell.xib */; };
+		3D9A6F1E25C7896B00DF889B /* AlbumCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D9A6F1925C7896B00DF889B /* AlbumCell.xib */; };
+		3D9A6F1F25C7896B00DF889B /* AlbumCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D9A6F1925C7896B00DF889B /* AlbumCell.xib */; };
+		3D9A6F2925C78A1900DF889B /* Handler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A6F2825C78A1900DF889B /* Handler.swift */; };
+		3D9A6F2A25C78A1900DF889B /* Handler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A6F2825C78A1900DF889B /* Handler.swift */; };
+		3D9A6F2B25C78A1900DF889B /* Handler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A6F2825C78A1900DF889B /* Handler.swift */; };
+		3D9A6F3425C78A9C00DF889B /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A6F3325C78A9C00DF889B /* Album.swift */; };
+		3D9A6F3525C78A9C00DF889B /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A6F3325C78A9C00DF889B /* Album.swift */; };
+		3D9A6F3625C78A9C00DF889B /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A6F3325C78A9C00DF889B /* Album.swift */; };
+		3D9A6F3E25C78AB100DF889B /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A6F3D25C78AB100DF889B /* Request.swift */; };
+		3D9A6F3F25C78AB100DF889B /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A6F3D25C78AB100DF889B /* Request.swift */; };
+		3D9A6F4025C78AB100DF889B /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A6F3D25C78AB100DF889B /* Request.swift */; };
+		3D9A6F4525C78AC600DF889B /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A6F4425C78AC600DF889B /* Result.swift */; };
+		3D9A6F4625C78AC600DF889B /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A6F4425C78AC600DF889B /* Result.swift */; };
+		3D9A6F4725C78AC600DF889B /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A6F4425C78AC600DF889B /* Result.swift */; };
+		3D9A6F4C25C78AD700DF889B /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A6F4B25C78AD700DF889B /* Track.swift */; };
+		3D9A6F4D25C78AD700DF889B /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A6F4B25C78AD700DF889B /* Track.swift */; };
+		3D9A6F4E25C78AD700DF889B /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A6F4B25C78AD700DF889B /* Track.swift */; };
+		3D9A6F5325C78B4200DF889B /* IdNib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A6F5225C78B4200DF889B /* IdNib.swift */; };
+		3D9A6F5425C78B4200DF889B /* IdNib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A6F5225C78B4200DF889B /* IdNib.swift */; };
+		3D9A6F5525C78B4200DF889B /* IdNib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A6F5225C78B4200DF889B /* IdNib.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +77,14 @@
 		3D9A6E7025C6F1B100DF889B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D9A6E8925C74C2C00DF889B /* MainCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewController.swift; sourceTree = "<group>"; };
 		3D9A6E9325C74C8A00DF889B /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
+		3D9A6F1825C7896B00DF889B /* AlbumCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCell.swift; sourceTree = "<group>"; };
+		3D9A6F1925C7896B00DF889B /* AlbumCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlbumCell.xib; sourceTree = "<group>"; };
+		3D9A6F2825C78A1900DF889B /* Handler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Handler.swift; sourceTree = "<group>"; };
+		3D9A6F3325C78A9C00DF889B /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		3D9A6F3D25C78AB100DF889B /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		3D9A6F4425C78AC600DF889B /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		3D9A6F4B25C78AD700DF889B /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		3D9A6F5225C78B4200DF889B /* IdNib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdNib.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +135,7 @@
 		3D9A6E4B25C6F1B000DF889B /* ForaSoft-iTunes */ = {
 			isa = PBXGroup;
 			children = (
+				3D9A6F2625C789EE00DF889B /* Handlers */,
 				3D9A6EF025C7627800DF889B /* Helpers */,
 				3D9A6E8825C74BE800DF889B /* Controllers */,
 				3D9A6E4C25C6F1B000DF889B /* AppDelegate.swift */,
@@ -152,6 +185,7 @@
 		3D9A6E9B25C74C9A00DF889B /* MainCollectionViewController */ = {
 			isa = PBXGroup;
 			children = (
+				3D9A6F1725C7892100DF889B /* AlbumCell */,
 				3D9A6E8925C74C2C00DF889B /* MainCollectionViewController.swift */,
 			);
 			path = MainCollectionViewController;
@@ -160,8 +194,46 @@
 		3D9A6EF025C7627800DF889B /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				3D9A6F5225C78B4200DF889B /* IdNib.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		3D9A6F1725C7892100DF889B /* AlbumCell */ = {
+			isa = PBXGroup;
+			children = (
+				3D9A6F1825C7896B00DF889B /* AlbumCell.swift */,
+				3D9A6F1925C7896B00DF889B /* AlbumCell.xib */,
+			);
+			path = AlbumCell;
+			sourceTree = "<group>";
+		};
+		3D9A6F2625C789EE00DF889B /* Handlers */ = {
+			isa = PBXGroup;
+			children = (
+				3D9A6F2725C789F500DF889B /* JSON */,
+			);
+			path = Handlers;
+			sourceTree = "<group>";
+		};
+		3D9A6F2725C789F500DF889B /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				3D9A6F3225C78A9100DF889B /* Codable */,
+				3D9A6F2825C78A1900DF889B /* Handler.swift */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		3D9A6F3225C78A9100DF889B /* Codable */ = {
+			isa = PBXGroup;
+			children = (
+				3D9A6F3325C78A9C00DF889B /* Album.swift */,
+				3D9A6F3D25C78AB100DF889B /* Request.swift */,
+				3D9A6F4425C78AC600DF889B /* Result.swift */,
+				3D9A6F4B25C78AD700DF889B /* Track.swift */,
+			);
+			path = Codable;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,6 +340,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D9A6E5925C6F1B100DF889B /* LaunchScreen.storyboard in Resources */,
+				3D9A6F1D25C7896B00DF889B /* AlbumCell.xib in Resources */,
 				3D9A6E5625C6F1B100DF889B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,6 +349,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D9A6F1E25C7896B00DF889B /* AlbumCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +357,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D9A6F1F25C7896B00DF889B /* AlbumCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,9 +368,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D9A6F4525C78AC600DF889B /* Result.swift in Sources */,
+				3D9A6F4C25C78AD700DF889B /* Track.swift in Sources */,
+				3D9A6F2925C78A1900DF889B /* Handler.swift in Sources */,
+				3D9A6F3E25C78AB100DF889B /* Request.swift in Sources */,
+				3D9A6F5325C78B4200DF889B /* IdNib.swift in Sources */,
 				3D9A6E8A25C74C2C00DF889B /* MainCollectionViewController.swift in Sources */,
 				3D9A6E4D25C6F1B000DF889B /* AppDelegate.swift in Sources */,
+				3D9A6F1A25C7896B00DF889B /* AlbumCell.swift in Sources */,
 				3D9A6E9425C74C8A00DF889B /* NavigationViewController.swift in Sources */,
+				3D9A6F3425C78A9C00DF889B /* Album.swift in Sources */,
 				3D9A6E4F25C6F1B000DF889B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -307,6 +389,13 @@
 				3D9A6E9525C74C8A00DF889B /* NavigationViewController.swift in Sources */,
 				3D9A6E6425C6F1B100DF889B /* ForaSoft_iTunesTests.swift in Sources */,
 				3D9A6E8B25C74C2C00DF889B /* MainCollectionViewController.swift in Sources */,
+				3D9A6F2A25C78A1900DF889B /* Handler.swift in Sources */,
+				3D9A6F3F25C78AB100DF889B /* Request.swift in Sources */,
+				3D9A6F4D25C78AD700DF889B /* Track.swift in Sources */,
+				3D9A6F5425C78B4200DF889B /* IdNib.swift in Sources */,
+				3D9A6F1B25C7896B00DF889B /* AlbumCell.swift in Sources */,
+				3D9A6F4625C78AC600DF889B /* Result.swift in Sources */,
+				3D9A6F3525C78A9C00DF889B /* Album.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,6 +406,13 @@
 				3D9A6E9625C74C8A00DF889B /* NavigationViewController.swift in Sources */,
 				3D9A6E6F25C6F1B100DF889B /* ForaSoft_iTunesUITests.swift in Sources */,
 				3D9A6E8C25C74C2C00DF889B /* MainCollectionViewController.swift in Sources */,
+				3D9A6F2B25C78A1900DF889B /* Handler.swift in Sources */,
+				3D9A6F4025C78AB100DF889B /* Request.swift in Sources */,
+				3D9A6F4E25C78AD700DF889B /* Track.swift in Sources */,
+				3D9A6F5525C78B4200DF889B /* IdNib.swift in Sources */,
+				3D9A6F1C25C7896B00DF889B /* AlbumCell.swift in Sources */,
+				3D9A6F4725C78AC600DF889B /* Result.swift in Sources */,
+				3D9A6F3625C78A9C00DF889B /* Album.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
