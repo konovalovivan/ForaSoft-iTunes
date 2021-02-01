@@ -23,39 +23,19 @@ class MainCollectionViewController: UICollectionViewController {
         Self.searchController.mainVC = self
     }
     
-    func flowLayoutConfig() {
-        guard let layout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout else { fatalError() }
-        let N = Self.spacing
-        layout.scrollDirection = .vertical
-        layout.sectionHeadersPinToVisibleBounds = false
-        layout.minimumLineSpacing = N
-        layout.minimumInteritemSpacing = N
-        layout.sectionInset = .init(top:N,left:N,bottom:N,right:N)
-    }
-    
-    func navigationControllerConfig() {
-        navigationItem.largeTitleDisplayMode = .always
-        navigationItem.searchController = Self.searchController
-        navigationController?.navigationBar.prefersLargeTitles = true
-        if let nc = self.navigationController {
-            nc.navigationBar.prefersLargeTitles = true
-            nc.navigationItem.largeTitleDisplayMode = .always
-        } else {
-            collectionView?.translatesAutoresizingMaskIntoConstraints = false
-            NSLayoutConstraint.activate([
-                collectionView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
-                collectionView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
-                collectionView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
-                collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
-            ])
-        }
-    }
-    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         flowLayoutConfig()
         navigationControllerConfig()
         Self.searchController.searchBar.text = Storage.searchBar.text
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        navigationController?.navigationBar.prefersLargeTitles = false
+        navigationItem.largeTitleDisplayMode = .never
+        // - - - - - - - - - - - - - - -
+        super.viewDidDisappear(animated)
+        networkIndicator(!animated, nil)
     }
     
     // MARK: -- UICollectionViewDataSource

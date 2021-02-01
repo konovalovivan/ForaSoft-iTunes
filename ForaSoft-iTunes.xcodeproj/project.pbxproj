@@ -73,6 +73,24 @@
 		3D9A6FB925C7975700DF889B /* extensionMainCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A6FB825C7975700DF889B /* extensionMainCollectionViewController.swift */; };
 		3D9A6FBA25C7975700DF889B /* extensionMainCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A6FB825C7975700DF889B /* extensionMainCollectionViewController.swift */; };
 		3D9A6FBB25C7975700DF889B /* extensionMainCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A6FB825C7975700DF889B /* extensionMainCollectionViewController.swift */; };
+		3D9A6FC025C7989800DF889B /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A6FBF25C7989800DF889B /* UIViewControllerExtensions.swift */; };
+		3D9A6FC125C7989800DF889B /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A6FBF25C7989800DF889B /* UIViewControllerExtensions.swift */; };
+		3D9A6FC225C7989800DF889B /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A6FBF25C7989800DF889B /* UIViewControllerExtensions.swift */; };
+		3D9A6FC725C798D500DF889B /* SceneDelegateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A6FC625C798D500DF889B /* SceneDelegateExtension.swift */; };
+		3D9A6FC825C798D500DF889B /* SceneDelegateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A6FC625C798D500DF889B /* SceneDelegateExtension.swift */; };
+		3D9A6FC925C798D500DF889B /* SceneDelegateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A6FC625C798D500DF889B /* SceneDelegateExtension.swift */; };
+		3D9A6FD025C799B000DF889B /* NetworkIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A6FCF25C799B000DF889B /* NetworkIndicatorView.swift */; };
+		3D9A6FD125C799B000DF889B /* NetworkIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A6FCF25C799B000DF889B /* NetworkIndicatorView.swift */; };
+		3D9A6FD225C799B000DF889B /* NetworkIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A6FCF25C799B000DF889B /* NetworkIndicatorView.swift */; };
+		3D9A6FDB25C799F700DF889B /* Indicators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A6FDA25C799F700DF889B /* Indicators.swift */; };
+		3D9A6FDC25C799F700DF889B /* Indicators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A6FDA25C799F700DF889B /* Indicators.swift */; };
+		3D9A6FDD25C799F700DF889B /* Indicators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A6FDA25C799F700DF889B /* Indicators.swift */; };
+		3D9A6FE925C79A6E00DF889B /* CGRectCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A6FE825C79A6E00DF889B /* CGRectCenter.swift */; };
+		3D9A6FEA25C79A6E00DF889B /* CGRectCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A6FE825C79A6E00DF889B /* CGRectCenter.swift */; };
+		3D9A6FEB25C79A6E00DF889B /* CGRectCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A6FE825C79A6E00DF889B /* CGRectCenter.swift */; };
+		3D9A6FF425C79AF700DF889B /* UIDeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A6FF325C79AF700DF889B /* UIDeviceExtension.swift */; };
+		3D9A6FF525C79AF700DF889B /* UIDeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A6FF325C79AF700DF889B /* UIDeviceExtension.swift */; };
+		3D9A6FF625C79AF700DF889B /* UIDeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A6FF325C79AF700DF889B /* UIDeviceExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,6 +143,12 @@
 		3D9A6FA025C7958600DF889B /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		3D9A6FAB25C796B900DF889B /* MainCollectionViewControllerSearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewControllerSearchController.swift; sourceTree = "<group>"; };
 		3D9A6FB825C7975700DF889B /* extensionMainCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensionMainCollectionViewController.swift; sourceTree = "<group>"; };
+		3D9A6FBF25C7989800DF889B /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
+		3D9A6FC625C798D500DF889B /* SceneDelegateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegateExtension.swift; sourceTree = "<group>"; };
+		3D9A6FCF25C799B000DF889B /* NetworkIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkIndicatorView.swift; sourceTree = "<group>"; };
+		3D9A6FDA25C799F700DF889B /* Indicators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Indicators.swift; sourceTree = "<group>"; };
+		3D9A6FE825C79A6E00DF889B /* CGRectCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGRectCenter.swift; sourceTree = "<group>"; };
+		3D9A6FF325C79AF700DF889B /* UIDeviceExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDeviceExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +199,7 @@
 		3D9A6E4B25C6F1B000DF889B /* ForaSoft-iTunes */ = {
 			isa = PBXGroup;
 			children = (
+				3D9A6FCD25C7999A00DF889B /* Views */,
 				3D9A6F8125C7928C00DF889B /* Dispatcher */,
 				3D9A6F6425C791E300DF889B /* API */,
 				3D9A6F5C25C791C300DF889B /* Storage */,
@@ -337,7 +362,11 @@
 		3D9A6F9F25C7955A00DF889B /* Other Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				3D9A6FA025C7958600DF889B /* UIViewExtensions.swift */,
+				3D9A6FE725C79A5900DF889B /* CGRect */,
+				3D9A6FE625C79A4800DF889B /* SceneDelegate */,
+				3D9A6FF225C79AE500DF889B /* UIDevice */,
+				3D9A6FE525C79A3A00DF889B /* UIView */,
+				3D9A6FE425C79A2E00DF889B /* UIViewController */,
 			);
 			path = "Other Extensions";
 			sourceTree = "<group>";
@@ -348,6 +377,71 @@
 				3D9A6FAB25C796B900DF889B /* MainCollectionViewControllerSearchController.swift */,
 			);
 			path = SearchControllerConfig;
+			sourceTree = "<group>";
+		};
+		3D9A6FCD25C7999A00DF889B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3D9A6FD925C799D700DF889B /* Indicators */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3D9A6FCE25C799A900DF889B /* NetworkIndicatorView */ = {
+			isa = PBXGroup;
+			children = (
+				3D9A6FCF25C799B000DF889B /* NetworkIndicatorView.swift */,
+			);
+			path = NetworkIndicatorView;
+			sourceTree = "<group>";
+		};
+		3D9A6FD925C799D700DF889B /* Indicators */ = {
+			isa = PBXGroup;
+			children = (
+				3D9A6FCE25C799A900DF889B /* NetworkIndicatorView */,
+				3D9A6FDA25C799F700DF889B /* Indicators.swift */,
+			);
+			path = Indicators;
+			sourceTree = "<group>";
+		};
+		3D9A6FE425C79A2E00DF889B /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3D9A6FBF25C7989800DF889B /* UIViewControllerExtensions.swift */,
+			);
+			path = UIViewController;
+			sourceTree = "<group>";
+		};
+		3D9A6FE525C79A3A00DF889B /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				3D9A6FA025C7958600DF889B /* UIViewExtensions.swift */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		3D9A6FE625C79A4800DF889B /* SceneDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				3D9A6FC625C798D500DF889B /* SceneDelegateExtension.swift */,
+			);
+			path = SceneDelegate;
+			sourceTree = "<group>";
+		};
+		3D9A6FE725C79A5900DF889B /* CGRect */ = {
+			isa = PBXGroup;
+			children = (
+				3D9A6FE825C79A6E00DF889B /* CGRectCenter.swift */,
+			);
+			path = CGRect;
+			sourceTree = "<group>";
+		};
+		3D9A6FF225C79AE500DF889B /* UIDevice */ = {
+			isa = PBXGroup;
+			children = (
+				3D9A6FF325C79AF700DF889B /* UIDeviceExtension.swift */,
+			);
+			path = UIDevice;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -494,15 +588,21 @@
 				3D9A6F7025C7921E00DF889B /* API.swift in Sources */,
 				3D9A6F5E25C791D000DF889B /* Storage.swift in Sources */,
 				3D9A6E8A25C74C2C00DF889B /* MainCollectionViewController.swift in Sources */,
+				3D9A6FF425C79AF700DF889B /* UIDeviceExtension.swift in Sources */,
+				3D9A6FC025C7989800DF889B /* UIViewControllerExtensions.swift in Sources */,
 				3D9A6FA125C7958600DF889B /* UIViewExtensions.swift in Sources */,
 				3D9A6F8B25C794C100DF889B /* SearchController.swift in Sources */,
 				3D9A6E4D25C6F1B000DF889B /* AppDelegate.swift in Sources */,
 				3D9A6F7825C7924500DF889B /* URLS.swift in Sources */,
+				3D9A6FC725C798D500DF889B /* SceneDelegateExtension.swift in Sources */,
+				3D9A6FDB25C799F700DF889B /* Indicators.swift in Sources */,
 				3D9A6F1A25C7896B00DF889B /* AlbumCell.swift in Sources */,
 				3D9A6F9625C7954300DF889B /* CellWithLastReq.swift in Sources */,
 				3D9A6E9425C74C8A00DF889B /* NavigationViewController.swift in Sources */,
+				3D9A6FE925C79A6E00DF889B /* CGRectCenter.swift in Sources */,
 				3D9A6F3425C78A9C00DF889B /* Album.swift in Sources */,
 				3D9A6E4F25C6F1B000DF889B /* SceneDelegate.swift in Sources */,
+				3D9A6FD025C799B000DF889B /* NetworkIndicatorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,18 +611,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D9A6E9525C74C8A00DF889B /* NavigationViewController.swift in Sources */,
+				3D9A6FF525C79AF700DF889B /* UIDeviceExtension.swift in Sources */,
 				3D9A6F7925C7924500DF889B /* URLS.swift in Sources */,
 				3D9A6F5F25C791D000DF889B /* Storage.swift in Sources */,
+				3D9A6FC825C798D500DF889B /* SceneDelegateExtension.swift in Sources */,
 				3D9A6F6725C791FF00DF889B /* GETPOST.swift in Sources */,
 				3D9A6E6425C6F1B100DF889B /* ForaSoft_iTunesTests.swift in Sources */,
 				3D9A6F9725C7954300DF889B /* CellWithLastReq.swift in Sources */,
 				3D9A6E8B25C74C2C00DF889B /* MainCollectionViewController.swift in Sources */,
+				3D9A6FEA25C79A6E00DF889B /* CGRectCenter.swift in Sources */,
 				3D9A6FBA25C7975700DF889B /* extensionMainCollectionViewController.swift in Sources */,
+				3D9A6FD125C799B000DF889B /* NetworkIndicatorView.swift in Sources */,
 				3D9A6F2A25C78A1900DF889B /* Handler.swift in Sources */,
+				3D9A6FDC25C799F700DF889B /* Indicators.swift in Sources */,
 				3D9A6F3F25C78AB100DF889B /* Request.swift in Sources */,
 				3D9A6F4D25C78AD700DF889B /* Track.swift in Sources */,
 				3D9A6F7125C7921E00DF889B /* API.swift in Sources */,
 				3D9A6F5425C78B4200DF889B /* IdNib.swift in Sources */,
+				3D9A6FC125C7989800DF889B /* UIViewControllerExtensions.swift in Sources */,
 				3D9A6F8C25C794C100DF889B /* SearchController.swift in Sources */,
 				3D9A6F1B25C7896B00DF889B /* AlbumCell.swift in Sources */,
 				3D9A6F4625C78AC600DF889B /* Result.swift in Sources */,
@@ -538,18 +644,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D9A6E9625C74C8A00DF889B /* NavigationViewController.swift in Sources */,
+				3D9A6FF625C79AF700DF889B /* UIDeviceExtension.swift in Sources */,
 				3D9A6F7A25C7924500DF889B /* URLS.swift in Sources */,
 				3D9A6F6025C791D000DF889B /* Storage.swift in Sources */,
+				3D9A6FC925C798D500DF889B /* SceneDelegateExtension.swift in Sources */,
 				3D9A6F6825C791FF00DF889B /* GETPOST.swift in Sources */,
 				3D9A6E6F25C6F1B100DF889B /* ForaSoft_iTunesUITests.swift in Sources */,
 				3D9A6F9825C7954300DF889B /* CellWithLastReq.swift in Sources */,
 				3D9A6E8C25C74C2C00DF889B /* MainCollectionViewController.swift in Sources */,
+				3D9A6FEB25C79A6E00DF889B /* CGRectCenter.swift in Sources */,
 				3D9A6FBB25C7975700DF889B /* extensionMainCollectionViewController.swift in Sources */,
+				3D9A6FD225C799B000DF889B /* NetworkIndicatorView.swift in Sources */,
 				3D9A6F2B25C78A1900DF889B /* Handler.swift in Sources */,
+				3D9A6FDD25C799F700DF889B /* Indicators.swift in Sources */,
 				3D9A6F4025C78AB100DF889B /* Request.swift in Sources */,
 				3D9A6F4E25C78AD700DF889B /* Track.swift in Sources */,
 				3D9A6F7225C7921E00DF889B /* API.swift in Sources */,
 				3D9A6F5525C78B4200DF889B /* IdNib.swift in Sources */,
+				3D9A6FC225C7989800DF889B /* UIViewControllerExtensions.swift in Sources */,
 				3D9A6F8D25C794C100DF889B /* SearchController.swift in Sources */,
 				3D9A6F1C25C7896B00DF889B /* AlbumCell.swift in Sources */,
 				3D9A6F4725C78AC600DF889B /* Result.swift in Sources */,
