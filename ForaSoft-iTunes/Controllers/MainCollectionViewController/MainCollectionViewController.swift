@@ -1,64 +1,73 @@
 import UIKit
 
-private let reuseIdentifier = "Cell"
-
 class MainCollectionViewController: UICollectionViewController {
+    
+    fileprivate func collectionViewConfig() {
+        collectionView!.register(AlbumCell.self, forCellWithReuseIdentifier: AlbumCell.reuseId)
+        collectionView.backgroundColor = .systemBackground
+        collectionView.keyboardDismissMode = .onDrag
+        collectionView.alwaysBounceVertical = true
+        collectionView.isPrefetchingEnabled = true
+        collectionView.setNeedsLayout()
+        collectionView.layoutIfNeeded()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Main Screen"
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
+        view.backgroundColor = .systemBackground
         
-        // Register cell classes
-        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
-        
-        // Do any additional setup after loading the view.
+        collectionViewConfig()
+        Self.searchController.searchBar.delegate = self
+        Self.searchController.delegate = self
+        Self.searchController.mainVC = self
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        flowLayoutConfig()
+        navigationControllerConfig()
+        Self.searchController.searchBar.text = Storage.searchBar.text
     }
     
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using [segue destinationViewController].
-     // Pass the selected object to the new view controller.
-     }
-     */
+    override func viewDidDisappear(_ animated: Bool) {
+        navigationController?.navigationBar.prefersLargeTitles = false
+        navigationItem.largeTitleDisplayMode = .never
+        // - - - - - - - - - - - - - - -
+        super.viewDidDisappear(animated)
+        networkIndicator(!animated, nil)
+    }
     
-    // MARK: UICollectionViewDataSource
+    // MARK: -- UICollectionViewDataSource
     
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 0
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 0
+        return Storage.request?.resultCount ?? 0
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
-        
-        // Configure the cell
-        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: AlbumCell.reuseId, for: indexPath) as! AlbumCell
+        let req = Storage.request
+        if let rc = req?.resultCount, rc > 0 && indexPath.row < rc {
+            if let result = req?.results[indexPath.row] {
+                cell.config(result)
+            }
+        }
         return cell
     }
     
-    override init(collectionViewLayout layout: UICollectionViewLayout) {
-        super.init(collectionViewLayout: layout)
-    }
-    convenience init() {
-        self.init(collectionViewLayout: UICollectionViewLayout())
+    init() {
+        // Fix: initialized with a non-nil layout parameter
+        super.init(collectionViewLayout: UICollectionViewFlowLayout())
     }
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    // MARK: UICollectionViewDelegate
+    // MARK:  -- UICollectionViewDelegate
     
     /*
      // Uncomment this method to specify if the specified item should be highlighted during tracking
