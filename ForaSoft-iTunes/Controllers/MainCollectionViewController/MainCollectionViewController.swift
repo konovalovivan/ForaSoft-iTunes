@@ -1,11 +1,5 @@
 import UIKit
 
-extension MainCollectionViewController {
-    // private(set) static var searchController: SearchController!
-    private(set) static var numberOfItemsPerRow: CGFloat = 2
-    private(set) static var spacing: CGFloat = 16
-}
-
 class MainCollectionViewController: UICollectionViewController {
     
     fileprivate func collectionViewConfig() {
@@ -24,6 +18,9 @@ class MainCollectionViewController: UICollectionViewController {
         view.backgroundColor = .systemBackground
         
         collectionViewConfig()
+        Self.searchController.searchBar.delegate = self
+        Self.searchController.delegate = self
+        Self.searchController.mainVC = self
     }
     
     func flowLayoutConfig() {
@@ -38,7 +35,7 @@ class MainCollectionViewController: UICollectionViewController {
     
     func navigationControllerConfig() {
         navigationItem.largeTitleDisplayMode = .always
-        // navigationItem.searchController = searchController
+        navigationItem.searchController = Self.searchController
         navigationController?.navigationBar.prefersLargeTitles = true
         if let nc = self.navigationController {
             nc.navigationBar.prefersLargeTitles = true
@@ -58,6 +55,7 @@ class MainCollectionViewController: UICollectionViewController {
         super.viewWillAppear(animated)
         flowLayoutConfig()
         navigationControllerConfig()
+        Self.searchController.searchBar.text = Storage.searchBar.text
     }
     
     // MARK: -- UICollectionViewDataSource
@@ -88,7 +86,7 @@ class MainCollectionViewController: UICollectionViewController {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-
+    
     // MARK:  -- UICollectionViewDelegate
     
     /*
