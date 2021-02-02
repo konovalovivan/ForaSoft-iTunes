@@ -25,7 +25,7 @@ extension AlbumPageVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let cell = tableView.cellForRow(at: indexPath) as! AlbumPageVCCell
+        guard let cell = tableView.cellForRow(at: indexPath) as? AlbumPageVCCell else { fatalError("Cell not found") }
         if let assetURL = URL(string: cell.track.previewUrl) {
             let asset = AVAsset(url: assetURL)
             self.audioPlayer.start(asset)

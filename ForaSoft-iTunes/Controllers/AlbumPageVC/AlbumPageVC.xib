@@ -15,12 +15,6 @@
                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 <subviews>
-                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="78L-cF-wev" userLabel="bgAlbumCover">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="414"/>
-                        <constraints>
-                            <constraint firstAttribute="width" secondItem="78L-cF-wev" secondAttribute="height" multiplier="1:1" id="HJ8-vJ-f9g"/>
-                        </constraints>
-                    </imageView>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="albumCover" image="albumcover_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="mrO-jg-ry9" userLabel="albumCover">
                         <rect key="frame" x="124" y="20" width="166" height="165.5"/>
                         <constraints>
@@ -56,23 +50,14 @@
                     <constraint firstItem="mrO-jg-ry9" firstAttribute="width" secondItem="ZMQ-sW-I1Y" secondAttribute="width" multiplier="0.4" id="19c-vV-5RO"/>
                     <constraint firstItem="GoA-XN-emR" firstAttribute="trailing" secondItem="ZMQ-sW-I1Y" secondAttribute="trailing" id="2zT-tJ-FRX"/>
                     <constraint firstItem="mrO-jg-ry9" firstAttribute="centerX" secondItem="ZMQ-sW-I1Y" secondAttribute="centerX" id="7EW-Ft-fH5"/>
-                    <constraint firstAttribute="trailing" secondItem="78L-cF-wev" secondAttribute="trailing" id="ETN-Hu-zGN"/>
                     <constraint firstAttribute="bottom" secondItem="GoA-XN-emR" secondAttribute="bottom" id="I8h-5S-ZYm"/>
                     <constraint firstItem="6wV-A0-eZk" firstAttribute="top" secondItem="mrO-jg-ry9" secondAttribute="bottom" constant="10" id="IVC-3S-zac"/>
-                    <constraint firstItem="78L-cF-wev" firstAttribute="width" secondItem="ZMQ-sW-I1Y" secondAttribute="width" id="Ja1-pz-d6p"/>
-                    <constraint firstItem="78L-cF-wev" firstAttribute="top" secondItem="ZMQ-sW-I1Y" secondAttribute="top" id="Wcd-ff-gbL"/>
-                    <constraint firstItem="78L-cF-wev" firstAttribute="leading" secondItem="ZMQ-sW-I1Y" secondAttribute="leading" id="eBE-0A-Vyh"/>
                     <constraint firstItem="GoA-XN-emR" firstAttribute="top" secondItem="6wV-A0-eZk" secondAttribute="bottom" constant="10" id="jS4-iG-3w9"/>
                     <constraint firstItem="6wV-A0-eZk" firstAttribute="width" secondItem="ZMQ-sW-I1Y" secondAttribute="width" id="nxu-SZ-evY"/>
                     <constraint firstItem="mrO-jg-ry9" firstAttribute="top" secondItem="ZMQ-sW-I1Y" secondAttribute="top" constant="20" id="oNZ-kP-9id"/>
                     <constraint firstItem="GoA-XN-emR" firstAttribute="leading" secondItem="ZMQ-sW-I1Y" secondAttribute="leading" id="s7e-tW-B3r"/>
                     <constraint firstItem="6wV-A0-eZk" firstAttribute="centerX" secondItem="aCQ-sT-ioG" secondAttribute="centerX" id="xVt-M0-rkb"/>
                 </constraints>
-                <variation key="default">
-                    <mask key="subviews">
-                        <exclude reference="78L-cF-wev"/>
-                    </mask>
-                </variation>
             </view>
             <extendedEdge key="edgesForExtendedLayout"/>
             <toolbarItems/>

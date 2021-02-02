@@ -33,9 +33,12 @@ class AlbumPageVC: UIViewController {
         self.result = result
         albumCover.image = UIImage(data: result.image100_data!)
         albumCover.layer.cornerRadius = 10
+        
         albumTitle.text = result.collectionName
         genreAndYear.text = result.primaryGenreName + " ∙ " + result.releaseDate.prefix(4) // year
+        
         appleMusicURL = URLS.appleMusic(result.collectionName, result.collectionId)
+        tableView.reloadData()
     }
     
     override func viewDidLoad() {
