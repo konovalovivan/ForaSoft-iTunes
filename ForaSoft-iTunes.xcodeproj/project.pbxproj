@@ -268,9 +268,9 @@
 			isa = PBXGroup;
 			children = (
 				3D9A702125C81EE900DF889B /* AlbumPageVC */,
-				3D9A6F8925C7949D00DF889B /* SearchController */,
 				3D9A6E9B25C74C9A00DF889B /* MainCollectionViewController */,
 				3D9A6E9A25C74C9000DF889B /* NavigationViewController */,
+				3D9A6F8925C7949D00DF889B /* SearchController */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -491,9 +491,9 @@
 		3D9A702125C81EE900DF889B /* AlbumPageVC */ = {
 			isa = PBXGroup;
 			children = (
-				3D9A704525C8206E00DF889B /* TableView_AlbumPageVC */,
 				3D9A702225C81F0C00DF889B /* AlbumPageVC.swift */,
 				3D9A702325C81F0C00DF889B /* AlbumPageVC.xib */,
+				3D9A704525C8206E00DF889B /* TableView_AlbumPageVC */,
 			);
 			path = AlbumPageVC;
 			sourceTree = "<group>";

@@ -2,24 +2,30 @@ import Foundation
 import UIKit
 
 extension MainCollectionViewController {
-    static let searchController = SearchController(searchResultsController: nil)
-    static let numberOfItemsPerRow: CGFloat = 2.0
     static let spacing: CGFloat = 16.0
+    static let searchController = SearchController(searchResultsController: nil)
     
     internal func flowLayoutConfig() {
         guard let layout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout else { fatalError() }
-        let s = Self.spacing
+        
+        let S = Self.spacing
         layout.scrollDirection = .vertical
         layout.sectionHeadersPinToVisibleBounds = false
-        layout.minimumLineSpacing = s
-        layout.minimumInteritemSpacing = s
-        layout.sectionInset = .init(top:s,left:s,bottom:s,right:s)
+        layout.sectionInset = .init(top:S, left:S, bottom:S, right:S)
     }
     
     internal func navigationControllerConfig() {
         navigationItem.largeTitleDisplayMode = .always
         navigationItem.searchController = Self.searchController
         navigationController?.navigationBar.prefersLargeTitles = true
+        
+        let appearance = UINavigationBarAppearance()
+        appearance.backgroundColor = .systemBackground
+        
+        navigationController?.navigationBar.standardAppearance = appearance
+        navigationController?.navigationBar.compactAppearance = appearance
+        navigationController?.navigationBar.scrollEdgeAppearance = appearance
+        
         if let nc = self.navigationController {
             nc.navigationBar.prefersLargeTitles = true
             nc.navigationItem.largeTitleDisplayMode = .always

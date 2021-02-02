@@ -1,9 +1,9 @@
 import UIKit
 
-class MainCollectionViewController: UICollectionViewController {
+class MainCollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
     fileprivate func collectionViewConfig() {
-        // clearsSelectionOnViewWillAppear = false
+        clearsSelectionOnViewWillAppear = false
         collectionView!.register(AlbumCell.nib, forCellWithReuseIdentifier: AlbumCell.reuseId)
         collectionView!.backgroundColor = .systemBackground
         collectionView!.keyboardDismissMode = .onDrag
@@ -78,14 +78,6 @@ class MainCollectionViewController: UICollectionViewController {
         return cell
     }
     
-    internal func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let spacing: CGFloat = Self.spacing
-        let items: CGFloat = Self.numberOfItemsPerRow
-        let totalSpacing = (2 * spacing) + ((items - 1) * spacing)
-        let width = (collectionView.bounds.width - totalSpacing) / items
-        return CGSize(width: width, height: width * 1.33)
-    }
-    
     // MARK:  -- UICollectionViewDelegate
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
@@ -94,5 +86,22 @@ class MainCollectionViewController: UICollectionViewController {
         album.configuration(result)
         // present(album, animated: true, completion: nil)
         navigationController?.pushViewController(album, animated: true)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return Self.spacing
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return Self.spacing
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let sp = Self.spacing
+        let items: CGFloat = 2.0
+        let ts = (2 * sp) + ((items - 1) * sp) // total spacing
+        let v = (collectionView.bounds.width - ts) / items
+        let itemSize = CGSize(width: v, height: v * 1.33)
+        return itemSize
     }
 }
