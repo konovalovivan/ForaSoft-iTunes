@@ -3,7 +3,13 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
+    internal(set) public var window: UIWindow?
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        self.window = UIWindow()
+        guard let window = window else { fatalError("UIWindow not found") }
+        window.rootViewController = NavigationViewController()
+        window.makeKeyAndVisible()
         return true
     }
     

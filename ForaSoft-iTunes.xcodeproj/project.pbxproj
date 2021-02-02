@@ -91,7 +91,6 @@
 		3D9A6FF425C79AF700DF889B /* UIDeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A6FF325C79AF700DF889B /* UIDeviceExtension.swift */; };
 		3D9A6FF525C79AF700DF889B /* UIDeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A6FF325C79AF700DF889B /* UIDeviceExtension.swift */; };
 		3D9A6FF625C79AF700DF889B /* UIDeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A6FF325C79AF700DF889B /* UIDeviceExtension.swift */; };
-		3D9A700E25C818D900DF889B /* MillisecondsToMinutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A700D25C818D900DF889B /* MillisecondsToMinutes.swift */; };
 		3D9A701725C8191300DF889B /* StringFromTimeInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A701625C8191300DF889B /* StringFromTimeInterval.swift */; };
 		3D9A702425C81F0C00DF889B /* AlbumPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A702225C81F0C00DF889B /* AlbumPageVC.swift */; };
 		3D9A702525C81F0C00DF889B /* AlbumPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A702225C81F0C00DF889B /* AlbumPageVC.swift */; };
@@ -172,7 +171,6 @@
 		3D9A6FDA25C799F700DF889B /* Indicators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Indicators.swift; sourceTree = "<group>"; };
 		3D9A6FE825C79A6E00DF889B /* CGRectCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGRectCenter.swift; sourceTree = "<group>"; };
 		3D9A6FF325C79AF700DF889B /* UIDeviceExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDeviceExtension.swift; sourceTree = "<group>"; };
-		3D9A700D25C818D900DF889B /* MillisecondsToMinutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MillisecondsToMinutes.swift; sourceTree = "<group>"; };
 		3D9A701625C8191300DF889B /* StringFromTimeInterval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringFromTimeInterval.swift; sourceTree = "<group>"; };
 		3D9A702225C81F0C00DF889B /* AlbumPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumPageVC.swift; sourceTree = "<group>"; };
 		3D9A702325C81F0C00DF889B /* AlbumPageVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlbumPageVC.xib; sourceTree = "<group>"; };
@@ -388,7 +386,6 @@
 			isa = PBXGroup;
 			children = (
 				3D9A6FE725C79A5900DF889B /* CGRect */,
-				3D9A700625C818CC00DF889B /* Int */,
 				3D9A6FE625C79A4800DF889B /* SceneDelegate */,
 				3D9A701525C8190100DF889B /* TimeInterval */,
 				3D9A6FF225C79AE500DF889B /* UIDevice */,
@@ -470,14 +467,6 @@
 				3D9A6FF325C79AF700DF889B /* UIDeviceExtension.swift */,
 			);
 			path = UIDevice;
-			sourceTree = "<group>";
-		};
-		3D9A700625C818CC00DF889B /* Int */ = {
-			isa = PBXGroup;
-			children = (
-				3D9A700D25C818D900DF889B /* MillisecondsToMinutes.swift */,
-			);
-			path = Int;
 			sourceTree = "<group>";
 		};
 		3D9A701525C8190100DF889B /* TimeInterval */ = {
@@ -696,7 +685,6 @@
 				3D9A6FC725C798D500DF889B /* SceneDelegateExtension.swift in Sources */,
 				3D9A6FDB25C799F700DF889B /* Indicators.swift in Sources */,
 				3D9A6F1A25C7896B00DF889B /* AlbumCell.swift in Sources */,
-				3D9A700E25C818D900DF889B /* MillisecondsToMinutes.swift in Sources */,
 				3D9A6F9625C7954300DF889B /* CellWithLastReq.swift in Sources */,
 				3D9A6E9425C74C8A00DF889B /* NavigationViewController.swift in Sources */,
 				3D9A6FE925C79A6E00DF889B /* CGRectCenter.swift in Sources */,
