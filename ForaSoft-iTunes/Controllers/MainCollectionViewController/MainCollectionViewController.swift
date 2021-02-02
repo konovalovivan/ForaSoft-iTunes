@@ -1,6 +1,9 @@
 import UIKit
+import Network
 
 class MainCollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
+    
+    let networkMonitor: NWPathMonitor = NWPathMonitor()
     
     fileprivate func collectionViewConfig() {
         clearsSelectionOnViewWillAppear = false
@@ -25,7 +28,7 @@ class MainCollectionViewController: UICollectionViewController, UICollectionView
         
         view.addSubview(Indicators.loading)
         view.addSubview(Indicators.failLabel)
-        networkIndicator(true, { self.view.addSubview($0) })
+        networkIndicator(self.networkMonitor, true, { self.view.addSubview($0) })
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -46,7 +49,7 @@ class MainCollectionViewController: UICollectionViewController, UICollectionView
         navigationItem.largeTitleDisplayMode = .never
         // - - - - - - - - - - - - - - -
         super.viewDidDisappear(animated)
-        networkIndicator(!animated, nil)
+        networkIndicator(self.networkMonitor, !animated, nil)
     }
     
     init() {

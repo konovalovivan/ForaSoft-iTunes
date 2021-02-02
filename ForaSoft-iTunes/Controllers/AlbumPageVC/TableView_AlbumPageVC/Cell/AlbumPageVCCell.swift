@@ -18,7 +18,10 @@ class AlbumPageVCCell: UITableViewCell {
         artistName.text = track.artistName
         trackName.text = track.trackName
         
-        trackTime.text = track.trackTimeMillis.msToMinutes()
+        let date = Date(timeIntervalSince1970: Double(track.trackTimeMillis) / 1000)
+        let formatter = DateFormatter()
+        formatter.dateFormat = "mm:ss"
+        trackTime.text = formatter.string(from: date as Date)
         
         if track.trackExplicitness.lowercased().hasPrefix("exp") {
             explicitBadge.isHidden = false
